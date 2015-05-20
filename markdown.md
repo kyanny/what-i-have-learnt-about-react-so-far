@@ -12,7 +12,7 @@ class: center, middle
 
 # I have read this book
 
-.center[![入門 React](http://www.oreilly.co.jp/books/images/picture_large978-4-87311-719-5.jpeg)]
+.center[![入門 React](./reactjs.jpg)]
 
 .center[[入門 React](http://www.oreilly.co.jp/books/9784873117195/) / [Developing a React Edge](http://shop.oreilly.com/product/9781939902122.do?sortby=publicationDate)]
 
@@ -44,16 +44,17 @@ React application follows this rule:
 
 ---
 
-# Example: Todo app made by Backbone and React
+# Example: Todo app made by Backbone (Marionette) and React
 
-Backbone と React で「状態」の扱い方がどう違うかサンプルコードを書いた
+Backbone (Marionette) と React で「状態」の扱い方がどう違うかサンプルコードを書いた
 
-* Backbone version
-  * http://example.com
+* Backbone (Marionette)  version
+  * http://jsfiddle.net/kyanny/yknyLk8u/
   * State is managed by very limited DOM element and its Backbone.View
   * The view instance is not unsure about the state of its DOM element (HTML attributes, jQuery's "data", etc.)
 * React version
-  * http://example.com
+  * https://jsfiddle.net/kyanny/2Lk1hr6v/ (in memory)
+  * https://jsfiddle.net/kyanny/1guv5g4w/ (localStorage)
   * State is managed by component itself
   * State is always reflected to the rendered DOM
 
@@ -98,7 +99,7 @@ The "Virtual DOM": a kind of cache
 
 # Look back the React Todo app example
 
-* http://example.com
+* https://jsfiddle.net/kyanny/1guv5g4w/
   * localStorage を操作するコードがあちこちのイベントハンドラに散らばっている
   * データの処理（Model 層）の流れを追いづらい
     * せっかく React が View (DOM) →イベント発生→画面のレンダリングまでの処理の流れを一本化してくれたのに...
@@ -108,7 +109,7 @@ The "Virtual DOM": a kind of cache
 # Point of Flux
 
 * React brings promising architecture design to View layer. Why not do same thing to Model layer?
-* React が View 層でやった「どこか変化したら全部書き換えよう（処理の流れを一本化して把握しやすくしよう）」というのと同じことを Model 層でもやればいいじゃん、というのが Flux の狙い
+* React が View 層でやった「どこか変化したら全部書き換えよう（処理の流れを一本化して把握しやすくしよう）」というのと同じことを Model 層でもやればいいじゃん、というのが Flux の狙い（なのでは）
 
 ---
 
@@ -127,3 +128,9 @@ The "Virtual DOM": a kind of cache
 class: center, middle
 
 # Thank you!
+
+#### [AD] Quipper is hiring!
+
+![Quipper School](./quipperschoolw600.jpeg)
+
+[Web Developer](https://www.wantedly.com/projects/19361) / [iOS Developer](https://www.wantedly.com/projects/19367) / [Android Developer](https://www.wantedly.com/projects/20902) / [UI Designer](https://www.wantedly.com/projects/19368)
